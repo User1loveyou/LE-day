@@ -282,3 +282,16 @@
     }
 
 }
+.cover-image{
+    animation: zoomFoto 10s ease-in-out infinite alternate;
+}
+
+@keyframes zoomFoto{
+    from{
+        transform:scale(1);
+    }
+
+    to{
+        transform:scale(1.08);
+    }
+}
