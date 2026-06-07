@@ -1,1 +1,191 @@
+:root{
+    --cream:#f8f3ed;
+    --pink:#e8cfcf;
+    --wine:#7a1f3d;
+    --brown:#5e4634;
+    --text:#2b2b2b;
+}
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    overflow:hidden;
+    background:var(--cream);
+}
+
+/* TELAS */
+
+.screen{
+    width:100vw;
+    height:100vh;
+
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    position:absolute;
+    inset:0;
+}
+
+.active{
+    display:flex;
+}
+
+/* CAPA */
+
+.cover-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    align-items:center;
+
+    padding:40px;
+
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.6)
+    );
+}
+
+.overlay h1{
+    color:white;
+    font-size:3rem;
+    margin-bottom:20px;
+
+    font-family:'Cormorant Garamond',serif;
+}
+
+.overlay button{
+    border:none;
+    background:white;
+
+    padding:15px 25px;
+
+    border-radius:50px;
+
+    font-size:16px;
+}
+
+/* SENHA */
+
+.card{
+    width:90%;
+    max-width:350px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.card h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+
+    margin-bottom:10px;
+}
+
+.card p{
+    margin-bottom:15px;
+}
+
+.card input{
+    width:100%;
+
+    padding:14px;
+
+    border-radius:12px;
+    border:1px solid #ddd;
+
+    text-align:center;
+}
+
+.card button{
+    width:100%;
+
+    margin-top:15px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--wine);
+    color:white;
+}
+
+#error{
+    color:red;
+    margin-top:10px;
+}
+
+/* SPOTIFY */
+
+.spotify{
+    background:linear-gradient(
+        180deg,
+        #9e3c60,
+        #61172f
+    );
+
+    color:white;
+
+    padding:30px;
+}
+
+.spotify-cover{
+    width:85%;
+    max-width:320px;
+
+    aspect-ratio:1;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    margin-bottom:20px;
+}
+
+.spotify h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2.2rem;
+}
+
+.spotify p{
+    opacity:.8;
+    margin-top:5px;
+}
+
+#nextBtn{
+    width:90px;
+    height:90px;
+
+    border:none;
+
+    border-radius:50%;
+
+    margin-top:35px;
+
+    font-size:2rem;
+}
