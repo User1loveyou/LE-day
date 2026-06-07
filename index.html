@@ -3,15 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossa História ❤️</title>
+    <title>Luz ❤️ Erick</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <h1>Nosso Amor ❤️</h1>
+    <!-- CAPA -->
 
-    <p>
-        Este é o começo da nossa história.
-    </p>
+    <section id="home" class="screen active">
+
+        <img src="img/capa.jpg" class="cover-image">
+
+        <div class="overlay">
+
+            <h1>Luz ❤️ Erick</h1>
+
+            <button id="startBtn">
+                Por onde nosso amor anda
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- SENHA -->
+
+    <section id="passwordScreen" class="screen">
+
+        <div class="card">
+
+            <h2>Antes de entrar...</h2>
+
+            <p>Você lembra da nossa data?</p>
+
+            <input
+                type="text"
+                id="password"
+                placeholder="DD/MM/AAAA">
+
+            <button id="verifyBtn">
+                Entrar
+            </button>
+
+            <p id="error"></p>
+
+        </div>
+
+    </section>
+
+    <!-- SPOTIFY -->
+
+    <section id="spotifyScreen" class="screen spotify">
+
+        <img src="img/spotify.jpg" class="spotify-cover">
+
+        <h2>Nossa História</h2>
+
+        <p>Luz & Erick ❤️</p>
+
+        <button id="nextBtn">
+            ▶
+        </button>
+
+    </section>
+
+<script src="script.js"></script>
 
 </body>
 </html>
